@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+#mail_cont{width:100%; margin:100px auto; max-width:780px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+#mail_cont .logo{width: 300px;}
+#mail_cont h4{font-size: 25px; margin:30px auto; font-weight: normal;}
+
+#mail_cont .mc_info{width: 100%;}
+#mail_cont .mc_info h5{border-bottom:3px solid #333; margin-bottom: 0px; padding-bottom: 10px; font-size: 20px; font-weight: bold;}
+#mail_cont .mc_info table{width: 100%;margin-top: 10px;}
+
+#mail_cont .mc_info table tr td input{border:none; height: 30px; font-size: 16px;}
+
+#mail_cont .mc_info table tr td{padding:5px 0; font-size: 16px;}
+#mail_cont .mc_info table tr td:last-child{min-width: 600px;}
+#mail_cont .mc_info .mc_money{display: flex; justify-content: space-between; border-bottom: 1px solid #333;}
+#mail_cont .mc_info .mc_money p{font-weight: bold;}
+#mail_cont .mc_info .mc_money input{border:none; text-align: right; font-weight: bold; font-weight: 16px;}
+
+@media(max-width:480px){
+    #mail_cont .mc_info table tr td:last-child{min-width: 200px;}
+}

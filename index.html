@@ -1,0 +1,773 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="집통">
+<meta name="copyright" content="(주)알토">
+<meta name="title" content="집통 - 내집팔땐? 집통!">
+<meta name="keywords" content="집통">
+<meta name="description" content="내집팔땐, 집통!">
+<meta name="Robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://m.jiptong.com/images/jiptong_icon.png">
+<meta property="og:site_name" content="집통">
+<meta property="og:url" content="https://m.jiptong.com/">
+<meta property="og:title" content="집통 - 내집팔땐">
+<meta property="og:description" content="내집팔땐, 집통!">
+<title>::: 집통 ::: 내집팔땐?</title>
+
+<!--fontawesome-->
+<script src="https://kit.fontawesome.com/fc9abeac58.js" crossorigin="anonymous"></script>
+<!--font-->
+<link href="https://webfontworld.github.io/goodchoice/Jalnan.css" rel="stylesheet">
+
+<!-- Fav Icon -->
+<link rel="icon" type="image/jpg" href="./images/jiptong_icon.png" sizes="48x48">
+<link rel="shortcut icon" href="./images/jiptong_icon.png">
+
+<!-- Main Style -->
+<link rel="stylesheet" type="text/css" href="./css/style_noto.css" />
+<link rel="stylesheet" type="text/css" href="./css/jiptong_mw.css">
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="./css/side_menu.css" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="./css/bottom_tab_bar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+
+<!--fontawesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="./js/html5shiv.js"></script>
+<script type="text/javascript" src="./js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="./js/html5shiv.js"></script>
+<script type="text/javascript" src="./js/respond.min.js"></script>
+
+<!-- Basic JavaScript -->
+<script type="text/javascript" src="./js/script.js"></script>
+<script type="text/javascript" src="./js/side_menu.js"></script>
+<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="./js/bottom_tab_bar.js"></script>
+
+<!-- Tab JavaScript -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        //Default Action - TAB01
+        $(".tab_content").hide(); //Hide all content
+        $("ul.tabs li:first").addClass("active").show(); //Activate first tab
+        $(".tab_content:first").show(); //Show first tab content
+        //On Click Event
+        $("ul.tabs li").click(function () {
+            $("ul.tabs li").removeClass("active"); //Remove any "active" class
+            $(this).addClass("active"); //Add "active" class to selected tab
+            $(".tab_content").hide(); //Hide all tab content
+            var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+            $(activeTab).fadeIn(); //Fade in the active content
+            return false;
+        });
+    });
+</script>
+
+<!-- Bootstrap Core JavaScript -->
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script type="text/javascript" src="./js/scrolling-nav.js"></script>
+<script type="text/javascript" src="./js/jquery.easing.1.3.min.js"></script>
+
+<!-- FlexSlider -->
+<script defer src="./js/jquery.flexslider.js"></script>
+
+<!-- 웹폰트 : 비동기 로더 -->
+<script type="text/javascript">
+WebFontConfig = {
+	custom: {
+		families: ['Nanum Gothic'],
+		/*urls: ['./css/notosanskr.css'] 본고딕*/
+		urls: ['https://fonts.googleapis.com/earlyaccess/nanumgothic.css']
+	}
+};
+(function() {
+	var wf = document.createElement('script');
+	wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+		'://ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js';
+	wf.type = 'text/javascript';
+	wf.async = 'true';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(wf, s);
+})(); 
+</script>
+</head>
+    <!--### 전체 레이아웃 시작 : WRAP ###-->
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <div class="wrap">
+            <form method="post" action="./index.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="29UVkRRw3fDDNQ70ygY25Br+Yn+iVjfUhxxAOqDJSAJnlRoKvWNQqjtLpRSJeW1KY1cS2/oepepG433Ts5ayodkOEIQZLOBGQZ9LhQKhOcR3LGI/Wj7geyLNgdUVUKD0CRLqWWptjBRh2IjlMz5jLhUupawM1Bp8VZrZUIcP7zHbGIgKUmhTRNShqlYOuhOkovLioI1cCALCwBRlkv4yIG+wUTH1wP6gLDQL336VJew/YGUn999O/ZGXXrmuEifK57M8jLDQ6FD8c6VvKsuf6Q==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="tUb6x8HIkmJJ74egvm9HizZ5i7AthVGgWZb5ho/gFsmgGCxtGyA5+vZ2DKHFwnm4/Ijz+CPJQ66PaiNm/vDKO7qBFO79LWZ1/8vofuXIh8woEjR04Q7qv7k44URyPlWPeLvj/DROYql7xXBZfFfGxrOoj5Yq8X2ZXur1zZj6T7U=" />
+</div>
+                <div>
+                    <!--## 헤더 ##-->
+                    
+
+
+<div class="wrap">
+	<!--## 네비 : NAV ##-->
+	<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- PC 네비 -->
+			<div class="navbar-header page-scroll only_pc"></div>
+			<!-- PC 네비 -->
+			
+			<!-- 모바일 네비 side bar -->
+			<div class="navbar-header2 sidenav4 only_mobile" id="mySidenav4" style="padding:0 20px;">
+				<a href="index.aspx"><span>내집팔땐? 집통</span></a>
+				<a href="javascript:void(0)" id="open_btn2" class="openbtn2" onclick="openNav2()"><i class="fas fa-bars white"></i></a>
+				<a href="javascript:void(0)" id="close_btn2" class="closebtn2" onclick="closeNav2()" style="display: none; z-index:10000;"><i class="fas fa-times"></i></a>
+			</div>
+
+			<div id="sortable-list2" class="sidenav3" style="display:none;" >
+				<span class="m_menu"><a href="./howtouse.htm">사용방법</a></span>
+                <span class="m_menu"><a href="./sale.aspx">매물 촬영 대행</a></span>
+				<span class="m_menu"><a href="./concert.aspx">부동산 콘서트</a></span>
+				<span class="m_menu"><a href="./experience.aspx">부동산 현장체험</a></span>
+				<span class="m_menu"><a href="./qna.aspx">문의하기</a></span>
+			</div>
+
+			<!-- pc 네비 -->
+			<div class="collapse navbar-collapse only_pc">
+				<a class="navbar-brand logo" href="./index.aspx">
+					<h1>내집팔땐? 집통!</h1>
+				</a>
+				<ul class="nav navbar-nav">
+					<li><a href="./howtouse.htm">사용방법</a></li>
+                    <li><a href="./sale.aspx">매물 촬영 대행</a></li>
+					<li><a href="./concert.aspx">부동산 콘서트</a></li>
+					<li><a href="./experience.aspx">부동산 현장체험</a></li>
+					<li><a href="./qna.aspx">문의하기</a></li>
+				</ul>
+			</div>
+		
+			<div class="nav_bg"></div>
+		</div>
+
+        <!-- 우측 사이드 메뉴 -->
+
+
+		
+    </nav>
+</div>
+
+                    <!--## 본문 ##-->
+                    
+
+    <style>
+        /* index.html - popup */
+        .divpop {
+            position: fixed;
+            z-index: 999;
+            top: 100px;
+            left: 50px;
+            width: 352px;
+            height: 500px;
+            border: 1px solid black;
+            background-color: #fff;
+        }
+
+        .title_area {
+            font-weight: bold;
+            text-align: center;
+            width: 100%
+        }
+
+        .button_area {
+            position: absolute;
+            bottom: 13px;
+            left: 50%;
+        }
+
+        .button_area input[type=checkbox] {
+            margin-right: 10px;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: 0 auto;
+        }
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .dots .dot.active {
+            background-color: #717171;
+        }
+
+        .mySlides img {
+            height: 420px;
+        }
+        .footer {
+            display: none;
+        }
+
+        .closeBtn:hover {
+            cursor: pointer;
+        }
+
+        .box-shortcut2{	position:fixed;	right:10%;	top:50%;	z-index:800;border-radius:10px;}
+        .box-shortcut2 .menu {	margin-bottom:0px;}
+        .box-shortcut2 .menu > li > a{display:block; padding:0; box-sizing:border-box;}
+        .box-shortcut2 .order_banner{font-family: 'Montserrat';	width: 250px;height: 444px;	border:none;padding:10px;border-radius: 3px;position:relative;}
+        .box-shortcut2 .order_banner img{width: 250px;height: 100%;}
+
+        /*sale.htm*/
+        .sale_conts{position:relative;margin: 60px auto 0; background-color: #fff; width: 100%;  max-width:1200px;height: 100%; padding-bottom:100px;}
+        .sale_conts img{padding-top: 50px; width: 100%; max-width: 1080px;}
+        .sale_conts button{	display: block;	color:#fff;background-color:#92785F;	width: 100%;max-width: 1000px;margin:0 auto ;	font-size: 3em;	padding:35px 0;	border-radius: 15px;}
+        .sale_conts button:hover{color:#000;}
+
+    </style>
+
+    <!-- 토마토 그룹 css-->
+    <link rel="stylesheet" type="text/css" href="https://tomato.etomato.com/css/side_menu.css?v=202307121812" />
+    <link rel="stylesheet" type="text/css" href="https://tomato.etomato.com/css/bottom_tab_bar.css?v=202307121812" />
+
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="https://tomato.etomato.com/crypto-js.min.js"></script>
+    <script src="https://tomato.etomato.com/swiper-3.2.7.min.js"></script>
+    <script src="https://tomato.etomato.com/tomato_20220420.js?v=202307121812"></script>
+
+    <script>
+
+        // 휴대폰 번호 정규식
+        function sendBtn() {
+            var regex = /^[0-9]+$/;
+            //전화번호 형식
+            //var regex= /^\d{2,3}-\d{3,4}-\d{4}$/;
+            v = $('#phoneNumber').val();
+            if (v == "") {
+                alert('휴대폰 번호를 입력하세요.');
+                return false;
+            }
+            else if (!regex.test(v)) {
+                alert('숫자만 입력하세요');
+                $('#phoneNumber').val(v.replace(regex, ''));
+                return false;
+            }
+            else if (!$('#checkbox').is(':checked')) {
+                alert('동의하기를 눌러주세요.');
+                return false;
+            }
+        }
+
+
+    </script>
+
+    <!--layer popup-->
+    
+
+    <script>
+        //쿠키설정    
+        function setCookie(name, value, expiredays) {
+            var todayDate = new Date();
+            todayDate.setDate(todayDate.getDate() + expiredays);
+            document.cookie = name + '=' + escape(value) + '; path=/; expires=' + todayDate.toGMTString() + ';'
+        }
+
+        //쿠키 불러오기
+        function getCookie(name) {
+            var obj = name + "=";
+            var x = 0;
+            while (x <= document.cookie.length) {
+                var y = (x + obj.length);
+                if (document.cookie.substring(x, y) == obj) {
+                    if ((endOfCookie = document.cookie.indexOf(";", y)) == -1)
+                        endOfCookie = document.cookie.length;
+                    return unescape(document.cookie.substring(y, endOfCookie));
+                }
+                x = document.cookie.indexOf(" ", x) + 1;
+
+                if (x == 0) break;
+            }
+            return "";
+        }
+
+        //닫기 버튼 클릭시
+        function closeWin(key) {
+            if ($("#todaycloseyn").prop("checked")) {
+                setCookie('divpop' + key, 'Y', 1);
+            }
+            $(".divpop").hide();
+        }
+
+        $(function () {
+            if (getCookie("divpop1") != "Y") {
+                $("#ContentPlaceHolder1_divpop1").show();
+        } else {
+            $("#ContentPlaceHolder1_divpop1").hide();
+            }
+        });
+
+
+        //이미지 슬라이드
+        let lSlider;
+        let time = 3000;
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function currentSlide(n) {
+
+            clearTimeout(lSlider);
+            time = 5000;
+            showSlides(slideIndex = n);
+            time = 3000;
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            lSlider = setTimeout(showSlides, time); // Change image every 3 seconds
+        }
+    </script>
+
+
+    <!-- 토마토 그룹 시작 -->
+    <!-- Web-->
+    <div id="tomatoWeb" style="display: none; z-index: 9999;">
+        <div id="mySidenav" class="sidenav">
+            
+            <a href="javascript:void(0)" id="open_btn" class="openbtn" onclick="openNav()"><i class="fas fa-plus-circle"></i></a>
+            <a href="javascript:void(0)" id="close_btn" class="closebtn" onclick="closeNav()" style="display: none;"><i class="fas fa-times-circle"></i></a>
+        </div>
+
+        <div id="sortable-list" class="sidenav2" style="display: none;">
+            <h3>메뉴설정</h3>
+            <ul id="sortable" class="connectedSortable" style="list-style: none; padding: 0;">
+                
+            </ul>
+        </div>
+    </div>
+    <!-- Mobile -->
+    <div id="tomatoMobile" class="btab_case2" style="display: none;">
+        <div class="bottom_nav swiper-container-bottom">
+            <div id="mobileBot" class="swiper-wrapper menu" style="padding-top: 0px !important;">
+                <div id="setID" class="swiper-slide w20p item">
+                    <span onclick="location.href='/tomato.html';">
+                        <img src="https://tomato.etomato.com/images/icon/icon_set_b.png" alt="" style="width: 30px;"></span>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="bottom-prev swiper-button-prev"></div>
+            <div class="bottom-next swiper-button-next"></div>
+        </div>
+    </div>
+    <!-- 토마토 그룹 끝 -->
+
+
+
+
+
+    <!--## 콘텐츠 시작 : CONTAINER ##-->
+    <!-- 01 HEAD -->
+    <div class="tt_bg">
+        <div class="hcontainer">
+            <div class="mscreen">
+                <p class="mscreen_span">
+                    <em class="syellow">휴대폰 번호</em>만 남기면<br>
+                    <em class="syellow">간편 접수</em> 끝 !
+                </p>
+                <div class="wrap2">
+                    <div class="form-inline" role="form">
+                        
+
+                        <div class="form-group">
+                            <h3 class="require">휴대폰 번호 *</h3>
+                            <label></label>
+                            <input name="ctl00$ContentPlaceHolder1$phoneNumber" type="text" id="ContentPlaceHolder1_phoneNumber" />
+                        </div>
+                        <div class="form-group last form-privacy">
+                            <h3 class="require">개인정보 수집 및 이용 동의 *</h3>
+                            <textarea name="" rows="7" cols="80" readonly="readonly" disabled>
+[수집하는 개인정보 항목] 
+회원가입, 상담, 서비스 신청 등을 위해 아래와 같은 개인정보를수집하고 있습니다.
+- 이름, 휴대전화
+
+[개인정보의 수집 및 이용목적]
+수집한 개인정보를 다음의 목적을 위해 활용합니다.
+1. 서비스 이용에 따른 본인식별, 실명확인, 회원가입
+2. 고지사항 전달, 의사소통 경로 확보
+3. 신규 서비스 등 최신정보 개인 맞춤 서비스 및 마케팅 활용
+4. 불량회원 부정 이용 방지 및 비인가 사용 방지
+5. 기타 원활한 서비스 제공 및 운영 회원 관리
+
+[개인정보의 보유 및 이용기간]
+서비스 이용기간 동안 회원님의 개인정보는 "집통"에서 보유하며, 이용 계약 종료 후 지체 없이 파기합니다.
+이용약관 및 미풍양속을 해치는 등 서비스에 물의를 일으키는 경우, 불량사용자에 대해서는 이용자의 의사에 관계없이 강제탈퇴됩니다.
+
+[개인정보의 파기절차 및 방법]
+"집통"은 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체없이 파기합니다. 파기절차 및 방법은 다음과 같습니다.
+
+- 파기절차
+회원님이 회원가입 등을 위해 입력하신 정보는 목적이 달성된 후 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 파기됩니다.
+
+- 파기방법
+전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.
+
+[개인정보]
+이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.
+- 이용자들이 사전에 동의할 경우
+- 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우
+
+[수집한 개인정보의 위탁]
+고객님의 동의없이 고객님의 정보를 외부 업체에 위탁하지 않습니다.
+향후 그러한 필요가 생길 경우, 위탁 대상자와 위탁 업무 내용에 대해 고객님에게 통지하고 필요한 경우 사전 동의를 받도록 하겠습니다.
+
+[이용자 및 법정대리인의 권리와 그 행사방법]
+이용자 및 법정 대리인은 언제든지 등록되어 있는 자신 혹은 당해 만 14세 미만 아동의 개인정보를 조회하거나 수정할 수 있으며 가입해지를 요청할 수도 있습니다.
+이용자 혹은 만 14세 미만 아동의 개인정보 조회를 위해서는 '내 정보'를, 가입해지(동의철회)를 위해서는 "회원탈퇴"를 클릭하여 본인 확인 절차를 거치신 후 직접 열람, 정정 또는 탈퇴가 가능합니다. 혹은 개인정보 보호책임자에게 서면, 전화 또는 이메일로 연락하시면 지체없이 조치하겠습니다.
+귀하가 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 개인정보를 이용 또는 제공하지 않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체없이 통지하여 정정이 이루어지도록 하겠습니다.
+이용자 혹은 법정 대리인의 요청에 의해 해지 또는 삭제된 개인정보는 집통이 수집하는 개인정보의 보유 및 이용기간에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다.
+
+[개인정보 보호책임자]
+고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 이하여 아래와 같이 관련 부서 및 개인정보 보호책임자를 지정하고 있습니다.
+
+개인정보 보호책임자
+전화번호 : 02-2128-3396
+(평일 : 오전 9:00 ~ 오후 6:00 까지)
+이메일 : jklpolpoiu@etomato.com
+
+기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.
+1. 개인정보침해신고센터 (전화118,http://privacy.kisa.or.kr)
+2.개인정보분쟁조정위원회 (전화 1833-6972, http://www.kopico.go.kr)
+3.대검찰청 사이버수사과 (전화 1301, http://www.spo.go.kr/)
+4.경찰청 사이버안전국 (전화 182, http://cyberbureau.police.go.kr/)[수집하는 개인정보 항목]
+                            </textarea>
+                            <label class="form-checkbox-text">
+                                <span class="check-privacy"><input id="ContentPlaceHolder1_checkbox" type="checkbox" name="ctl00$ContentPlaceHolder1$checkbox" /></span>
+                                &nbsp;&nbsp;개인정보 수집 및 이용에 동의합니다.
+                            </label>
+                        </div>
+
+                        <div class="form-submit-wrap">
+                            <a onclick="sendBtn();" id="ContentPlaceHolder1_sendBtn" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$sendBtn&#39;,&#39;&#39;)">
+                                    간편하게 집 내놓기
+                                    <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+
+    <!-- 02 APP -->
+    <div id="app" class="ta_bg">
+        <div class="scontainer">
+            <div class="app_wrap2">
+                <h1>
+                    <em class="syellow">실시간 예측가</em>를 통한
+                    <br>
+                    <em class="syellow">합리적 금액</em>
+                </h1>
+                <span>내 부동산은 얼마?
+                    <br>
+                    부동산의 주변시세는?</span>
+                <span>원하는 매물을 <em class="syellow">실시간 예측가와 실거래가</em>를 통해 비교가능!
+                    <br>
+                    모든 이용자에게 합리적 가격 제시!</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 02-1 SERVICE -->
+    <div id="service" class="bg_sgreen">
+        <div class="scontainer">
+            <div class="ser_wrap2">
+                <p class="app_down_btn">
+                    <a href="https://play.google.com/store/apps/details?id=com.tomatosol.rtomato&hl=ko&gl=US">
+                        <img src="./images/ad_down.png" alt="구글플레이"></a>
+                    <a href="https://apps.apple.com/kr/app/%EC%A7%91%ED%86%B5/id932212601">
+                        <img src="./images/ios_down.png" alt="애플앱스토어"></a>
+                </p>
+                <span>구글플레이, 앱스토어에서 <strong>집통</strong>을 다운받아보세요.</span>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <!-- 02-2 SERVICE : PC -->
+    <div class="bg_sgreen" style="padding-top: 50px;">
+        <div class="scontainer">
+            <div class="m_wrap2">
+                <div class="mw2_img image-wrap">
+                    <div id="userEL8547162-imgCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="1500">
+                        <!--Wrapper fot slides-->
+                        <div class="tablet-box">
+                            <div class="carousel-inner" role="listbox" data-loop="true">
+                                <div class="item bg userEL8547162-bg1 active" data-attach="true" data-target=".userEL8547162-bg1">
+                                    <img src="./images/01.png" alt="">
+                                </div>
+                                <div class="item bg userEL8547162-bg2" data-attach="true" data-target=".userEL8547162-bg2">
+                                    <img src="./images/02.png" alt="">
+                                </div>
+                                <div class="item bg userEL8547162-bg3" data-attach="true" data-target=".userEL8547162-bg3">
+                                    <img src="./images/03.png" alt="">
+                                </div>
+                            </div>
+                            <!--<img src="//storage.googleapis.com/i.addblock.net/template/template-img-iPhone-White.png">-->
+
+                        </div>
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators" data-nav="true" data-border="true" data-selector=".carousel-indicators li" data-title="롤링 인덱스 컬러">
+                            <li data-target="#userEL8547162-imgCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#userEL8547162-imgCarousel" data-slide-to="1" class=""></li>
+                            <li data-target="#userEL8547162-imgCarousel" data-slide-to="2" class=""></li>
+                        </ol>
+
+                    </div>
+                </div>
+
+                <div class="mw2_text">
+                    <h1><em class="syellow">간편한 매물등록!</em><br>
+                        중개 수수료 50% 지원!</h1>
+                    <span>매물종류 선택하고 간편하게 내 집 등록완료</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 03 GUIDE -->
+    <div id="guide">
+        <div class="scontainer2 bg_sgreen">
+            <div class="content_third">
+                <img src="./images/mobile_img3.png" alt="">
+            </div>
+            <p>
+                전국 매물 정보를 한눈에!
+                <br>
+                <span>전국의 실거래가 정보를 집통을 통해 알아보세요</span>
+            </p>
+
+            <div class="content_third">
+                <img src="./images/text_title_img.png" alt="">
+            </div>
+
+            <p class="ct_p2">
+                내 집 사고 팔때 <em>복비 최대 DOWN!</em>
+                <span>집통에서는 중개수수료가 최대 <b>50%</b> 지원!
+                    <br>
+                    추가로 등기수수료까지 최대 <b>30%</b> 지원!</span>
+            </p>
+
+            <div class="video-content" data-video="true">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PGDwyUDY0CQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <p class="ct_p3">
+                집통 공식 소셜미디어
+				    <span class="ct_p3_span1">집통에서는 부동산에 관한 다양한 정보를 나누고 있습니다!
+                        <br>
+                        집통 SNS를 통해 더 많은 정보를 만나보세요!
+                    </span>
+                <span>집통 SNS 보러가기</span>
+            </p>
+
+            <ul data-selector=".divider" data-border="true" data-title="line color">
+                <li class="divider"></li>
+                <li class="divider"></li>
+                <li class="divider"></li>
+            </ul>
+
+            <div class="innerbox multi-columns-row image-wrap" data-clone-loop="true" data-clone-min="1" data-clone-max="5" data-clone-orgcol="5,5,5" data-min-width="60" data-max-width="156" data-child="4">
+
+                <div class="item col-md-15 col-sm-15 col-xs-15">
+                    <a href="https://www.instagram.com/jip_tong/" attr-link="https://www.instagram.com/jip_tong/" target="">
+                        <img src="./images/icon/instagram_icon.png" class="img-responsive" data-attach="true" data-fixedsize="true"></a>
+                </div>
+                
+                <div class="item col-md-15 col-sm-15 col-xs-15">
+                    <a href="https://www.facebook.com/jiptongtv" attr-link="https://www.facebook.com/jiptongtv" target="">
+                        <img src="./images/icon/facebook_icon.png" class="img-responsive" data-attach="true" data-fixedsize="true"></a>
+                </div>
+
+                <div class="item col-md-15 col-sm-15 col-xs-15">
+                    <a href="https://www.youtube.com/channel/UCW8wtAZsZIKU_xdBCrtw5aQ" attr-link="https://www.youtube.com/channel/UCW8wtAZsZIKU_xdBCrtw5aQ" target="">
+                        <img src="./images/icon/youtube_icon.png" class="img-responsive" data-attach="true" data-fixedsize="true"></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+    <!-- 매물촬영 대행 서비스-->
+    <div class="box-shortcut2">
+        <ul class="menu">
+            <li>
+                <a href="sale.aspx" title="신청 바로가기">
+                    <div class="order_banner">
+                        <img src="./images/banner.jpg" alt="">
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--# 콘텐츠 끝 : CONTAINER #-->
+
+    <!--# 풋터 시작 : FOOTER #-->
+    <div class="footer modFooter" style="display: block;">
+        <div class="copyright" style="padding: 40px 20px 60px;">
+            <p>집통 COMPANY</p>
+            <br>
+            ㈜토마토집통<br>
+            주소 : 서울특별시 마포구 양화진 4길 32, 2층(합정동, 이토마토빌딩)<br>
+            대표자 : 전우리
+            <br>
+            통신판매번호 : 2013-서울마포-0945<br>
+            사업자번호 : 105-87-89091
+            <br>
+            전화 : 02-2128-3838
+            <br>
+            팩스 : 02-2128-3851
+			    <div class="fw_top"><a href="#page-top" class="page-scroll">
+                    <img src="./images/icon/top_btn.png" alt="위로"></a></div>
+        </div>
+    </div>
+
+    <!--# 하단 스크롤링 바 #-->
+    <div id="tab2" class="tab_case2" style="display: none;">
+        <div id="" class="bottom_nav swiper-container">
+            <div class="swiper-wrapper menu">
+
+                <div class="swiper-slide w20p item">
+                    <span onclick="location.href=''">
+                        <img src="./images/icon2/통통.png" alt=""></span>
+                </div>
+                <div class="swiper-slide w20p item">
+                    <span onclick="location.href=''">
+                        <img src="./images/icon2/뉴스통.png" alt=""></span>
+                </div>
+                <div class="swiper-slide w20p item">
+                    <span onclick="location.href=''">
+                        <img src="./images/icon2/증권통.png" alt=""></span>
+                </div>
+                <div class="swiper-slide w20p item">
+                    <span onclick="location.href=''">
+                        <img src="./images/icon2/뉴스토마토.png" alt="" style="width: 30px;"></span>
+                </div>
+
+                <div class="swiper-slide w20p item">
+                    <span onclick="location.href=''">
+                        <img src="./images/icon2/티켓통.png" alt="" style="width: 30px;"></span>
+                </div>
+
+                <div class="swiper-slide w20p item">
+                    <span onclick="location.href=''">
+                        <img src="./images/icon2/통통몰.png" alt=""></span>
+                </div>
+
+                <div class="swiper-slide w20p item">
+                    <span onclick="location.href=''">
+                        <img src="./images/icon2/통통마켓.png" alt=""></span>
+                </div>
+                <div class="swiper-slide w20p item">
+                    <span onclick="location.href=''">
+                        <img src="./images/icon2/합격통.png" alt=""></span>
+                </div>
+                <div class="swiper-slide w20p item">
+                    <span onclick="location.href=''">
+                        <img src="./images/icon2/투자클럽.png" alt=""></span>
+                </div>
+                <div class="swiper-slide w20p item">
+                    <span onclick="location.href=''">
+                        <img src="./images/icon2/맛통.png" alt="" style="width: 30px;"></span>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+
+                     <!--## 푸터 ##-->
+                    
+
+<!--# 풋터 시작 : FOOTER #-->
+	<div class="footer">
+		<div class="copyright">
+			<P style="line-height:80px; margin-bottom:0px;">집통에 대한 모든 궁금증<br class="only_mobile"> 바로 문의하세요
+				<br>
+				<em>02 -2128-3838</em>
+				
+				<span style="font-size:20px; display: block;">업무시간 : 평일 오전9시  ~ 평일 오후 6시</span>
+			</P>
+			
+		</div>
+	</div>
+<!--# 풋터 끝 : FOOTER #-->
+
+
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

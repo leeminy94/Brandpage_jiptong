@@ -1,0 +1,482 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="집통">
+<meta name="copyright" content="(주)알토">
+<meta name="title" content="집통 - 내집팔땐? 집통!">
+<meta name="keywords" content="집통, 티켓, 예매, 블록체인, 보안, 암표방지, 비대면">
+<meta name="description" content="신기술 티켓 예매 플랫폼, 집통!">
+<meta name="Robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:image" content="./images/jiptong_icon.png">
+<meta property="og:site_name" content="집통">
+<meta property="og:url" content="http://">
+<meta property="og:title" content="집통 - 신기술 티켓 예매 플랫폼">
+<meta property="og:description" content="신기술 티켓 예매 플랫폼, 집통!">
+<title>::: 집통 ::: 내집팔땐?</title>
+
+<!--fontawesome-->
+<script src="https://kit.fontawesome.com/fc9abeac58.js" crossorigin="anonymous"></script>
+
+<!--font-->
+<link href="https://webfontworld.github.io/goodchoice/Jalnan.css" rel="stylesheet">
+
+<!-- Fav Icon -->
+<link rel="icon" type="image/jpg" href="./images/jiptong_icon.png" sizes="48x48">
+<link rel="shortcut icon" href="./images/jiptong_icon.png">
+
+<!-- Main Style -->
+<link rel="stylesheet" type="text/css" href="./css/style_noto.css" />
+<link rel="stylesheet" type="text/css" href="./css/jiptong_mw.css">
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="./css/side_menu.css" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="./css/bottom_tab_bar.css">
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="./js/html5shiv.js"></script>
+<script type="text/javascript" src="./js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="./js/html5shiv.js"></script>
+<script type="text/javascript" src="./js/respond.min.js"></script>
+
+<!-- Basic JavaScript -->
+<script type="text/javascript" src="./js/script.js"></script>
+<script type="text/javascript" src="./js/side_menu.js"></script>
+<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="./js/bottom_tab_bar.js"></script>
+
+<!-- Tab JavaScript -->
+<script type="text/javascript">
+$(document).ready(function () {
+    //Default Action - TAB01
+    $(".tab_content").hide(); //Hide all content
+    $("ul.tabs li:first").addClass("active").show(); //Activate first tab
+    $(".tab_content:first").show(); //Show first tab content
+    //On Click Event
+    $("ul.tabs li").click(function () {
+        $("ul.tabs li").removeClass("active"); //Remove any "active" class
+        $(this).addClass("active"); //Add "active" class to selected tab
+        $(".tab_content").hide(); //Hide all tab content
+        var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+        $(activeTab).fadeIn(); //Fade in the active content
+        return false;
+    });
+});
+</script>
+
+<!-- Bootstrap Core JavaScript -->
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script type="text/javascript" src="./js/scrolling-nav.js"></script>
+<script type="text/javascript" src="./js/jquery.easing.1.3.min.js"></script>
+
+<!-- FlexSlider -->
+<script defer src="./js/jquery.flexslider.js"></script>
+
+<!-- 웹폰트 : 비동기 로더 -->
+<script type="text/javascript">
+WebFontConfig = {
+	custom: {
+		families: ['Nanum Gothic'],
+		/*urls: ['./css/notosanskr.css'] 본고딕*/
+		urls: ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css']
+	}
+};
+(function() {
+	var wf = document.createElement('script');
+	wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+		'://ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js';
+	wf.type = 'text/javascript';
+	wf.async = 'true';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(wf, s);
+})(); 
+</script>
+</head>
+
+<!--### 전체 레이아웃 시작 : WRAP ###-->
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<div class="wrap">
+	<!--## 네비 : NAV ##-->
+	<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- PC 네비 -->
+			<div class="navbar-header page-scroll only_pc"></div>
+			<!-- PC 네비 -->
+
+			<!-- 모바일 네비 side bar -->
+			<div class="navbar-header2 sidenav4 only_mobile" id="mySidenav4" style="padding:0 20px;">
+				<a href="index.html"><span>내집팔땐? 집통</span></a>
+				<a href="javascript:void(0)" id="open_btn2" class="openbtn2" onclick="openNav2()"><i class="fas fa-bars white"></i></a>
+				<a href="javascript:void(0)" id="close_btn2" class="closebtn2" onclick="closeNav2()" style="display: none; z-index:10000;"><i class="fas fa-times"></i></a>
+			</div>
+
+			<div id="sortable-list2" class="sidenav3" style="display:none;" >
+				<span class="m_menu"><a href="experience.htm">부동산 현장체험</a></span>
+				<span class="m_menu"><a href="qna.htm">문의하기</a></span>
+			</div>
+
+			<!-- pc 네비 -->
+			<div class="collapse navbar-collapse only_pc">
+				<a class="navbar-brand logo" href="index.html">
+					<h1>내집팔땐? 집통!</h1>
+				</a>
+				<ul class="nav navbar-nav">
+					<li class="active" style="border-bottom:3px solid #000;"><a href="experience.htm" style="margin-bottom:10px;">부동산 현장체험</a></li>
+					<li class="" ><a href="qna.htm" >문의하기</a></li>
+				</ul>
+			</div>
+
+			<div class="nav_bg"></div>
+		</div>
+
+		<!-- 우측 사이드 메뉴 -->
+		<div id="mySidenav" class="sidenav">
+			<a href="#" data-tooltip="통통" style="z-index:10009 !important;"><img src="./images/icon2/통통.png" style="width: 20px; z-index: 1005 !important; " alt=""></a>
+			<a href="#" data-tooltip="뉴스통" style="z-index:10008 !important;" ><img src="./images/icon2/뉴스통.png" style="width: 20px; z-index: 10005 !important;" alt=""></a>
+			<a href="#" data-tooltip="증권통" style="z-index:10007 !important;"><img src="./images/icon2/증권통.png" style="width: 20px; z-index: 1005 !important;" alt=""></a>
+			<a href="#" data-tooltip="뉴스토마토" style="z-index:10006 !important;"><img src="./images/icon2/뉴스토마토.png" style="width: 20px; z-index: 1005 !important;" alt=""></a>
+			<a href="#" data-tooltip="티켓통" style="z-index:10005 !important;"><img src="./images/icon2/티켓통.png" style="width: 20px; z-index: 1005 !important;" alt=""></a>
+			<a href="#" data-tooltip="통통몰" style="z-index:10004 !important;"><img src="./images/icon2/통통몰.png" style="width: 20px; z-index: 1005 !important;" alt=""></a>
+			<a href="#" data-tooltip="통통마켓" style="z-index:10003 !important;"><img src="./images/icon2/통통마켓.png" style="width: 20px; z-index: 1005 !important;" alt=""></a>
+			<a href="#" data-tooltip="합격통" style="z-index:10002 !important;"><img src="./images/icon2/합격통.png" style="width: 20px; z-index: 1005 !important;" alt=""></a>
+			<a href="#" data-tooltip="투자클럽" style="z-index:10001 !important;"><img src="./images/icon2/투자클럽.png" style="width: 20px; z-index: 1005 !important;" alt=""></a>
+			<a href="#" data-tooltip="맛통" style="z-index:10000 !important;"><img src="./images/icon2/맛통.png" style="width: 20px; z-index: 1005 !important;" alt=""></a>
+			
+			
+			<a href="javascript:void(0)" id="open_btn" class="openbtn" onclick="openNav()"><i class="fas fa-plus-circle"></i></a>
+			<a href="javascript:void(0)" id="close_btn" class="closebtn" onclick="closeNav()" style="display: none;"><i class="fas fa-times-circle"></i></a>
+		</div>
+
+		<div id="sortable-list" class="sidenav2" style="display:none;" >
+			<h3>메뉴설정</h3>
+			<ul id="sortable" class="connectedSortable" >
+				
+
+				<li class="ui-state-default" >
+					<span><i class="fas fa-bars"></i><img src="./images/icon2/통통.png" style="width: 30px;" alt="">통통 </span>
+				</li>
+
+				<li class="ui-state-default" >
+					<span><i class="fas fa-bars"></i><img src="./images/icon2/뉴스통.png" style="width: 30px;" alt="">뉴스통 </span>
+				</li>
+
+				<li class="ui-state-default" >
+					<span><i class="fas fa-bars"></i><img src="./images/icon2/증권통.png" style="width: 30px;" alt="">증권통 </span>
+				</li>
+
+				<li class="ui-state-default" >
+					<span><i class="fas fa-bars"></i><img src="./images/icon2/뉴스토마토.png" style="width: 30px;" alt="">뉴스토마토 </span>
+					
+				</li>
+
+				<li class="ui-state-default" >
+					<span><i class="fas fa-bars"></i><img src="./images/icon2/티켓통.png" style="width: 30px;" alt="">티켓통 </span>
+				</li>
+
+				<li class="ui-state-default" >
+					<span><i class="fas fa-bars"></i><img src="./images/icon2/통통몰.png" style="width: 30px;" alt="">통통몰 </span>
+				</li>
+
+				<li class="ui-state-default" >
+					<span><i class="fas fa-bars"></i><img src="./images/icon2/통통마켓.png" style="width: 30px;" alt="">통통마켓 </span>
+				</li>
+				<li class="ui-state-default" >
+					<span><i class="fas fa-bars"></i><img src="./images/icon2/합격통.png" style="width: 30px;" alt="">합격통 </span>
+				</li>
+				<li class="ui-state-default" >
+					<span><i class="fas fa-bars"></i><img src="./images/icon2/투자클럽.png" style="width: 30px;" alt="">투자클럽 </span>
+				</li>
+
+				<li class="ui-state-default" >
+					<span><i class="fas fa-bars"></i><img src="./images/icon2/맛통.png" style="width: 30px;" alt="">맛통 </span>
+				</li>
+
+			</ul>
+
+			
+			<ul id="sortable2" class="connectedSortable" >
+				<h3 style="border-top:1px solid rgb(206, 204, 204);" class="ui-state-disabled" >추가 가능한 메뉴</h3>
+				<li class="ui-state-default" >
+					<span><i class="fas fa-bars"></i><img src="./images/icon2/코인통.png" style="width: 30px;" alt=""> 코인통 </span>
+					
+				</li>
+				<li class="ui-state-default">
+					<span><i class="fas fa-bars"></i><img src="./images/icon2/소통.png" style="width: 30px;" alt="">소통 </span>
+					
+				</li>
+				<li class="ui-state-default">
+					<span><i class="fas fa-bars"></i><img src="./images/icon2/서치통.png" style="width: 30px;" alt="">서치통 </span>
+					
+				</li>
+				<li class="ui-state-default">
+					<span><i class="fas fa-bars"></i><img src="./images/icon2/차통.png" style="width: 30px;" alt="">차통 </span>
+					
+				</li>
+			</ul>
+			
+		</div>
+		
+	</nav>
+	<!--## 네비 : NAV ##-->
+
+	
+
+	<!--## 콘텐츠 시작 : CONTAINER ##-->
+	<!-- 01 HEAD -->
+	<div class="tt_bg exp">
+		<div class="clear"></div>
+		<div class="exp_detail_cont">
+
+			<div class="edc_banner only_pc">
+				<div class="edcb_txt">
+					<div class="edcb_txt_l">
+						<p class="etl1">재개발_서울중구& GTX 라인</p>
+						<p class="etl2">집통 부동산 현장체험</p>
+						<p class="etl3">
+							<em class="syellow">재개발을 중심</em>으로 <em class="syellow">서울과 경기도 핵심 지역</em>등 <br><em class="syellow">소액으로 투자할 매물</em>을 다양하게 소개드리겠습니다. 
+						</p>
+					</div>	
+
+					<div class="edcb_txt_r">
+						<span class="etr_s">모집중</span>
+						<span><i class="fas fa-user-friends"></i>10명 모집중</span>
+					</div>
+				</div>
+				<img class="edc_title_img only_pc" src="./images/redevelop_b2.png" alt="">
+			</div>
+
+			<div class="edc_banner only_mobile">
+				<div class="edcb_txt">
+					<div class="edcb_txt_l">
+						<p class="etl1">재개발_서울중구& GTX 라인</p>
+						<p class="etl2">집통 부동산 현장체험</p>
+						<p class="etl3">
+							<em class="syellow">재개발을 중심</em>으로 <em class="syellow">서울과 경기도 핵심 지역</em>등 <br><em class="syellow">소액으로 투자할 매물</em>을 다양하게 소개드리겠습니다. 
+						</p>
+					</div>	
+
+					<div class="edcb_txt_r">
+						<span class="etr_s">모집중</span>
+						<span><i class="fas fa-user-friends"></i>10명 모집중</span>
+					</div>
+				</div>
+				<img class="edc_title_img only_mobile" src="./images/redevelop_b2_m.png" alt="">
+			</div>
+			
+			<div class="exp_detail_cont_list">
+				<h4 class="sgreen">안녕하세요! 전문가를 소개합니다.</h4>
+				<div class="exp_detail_cont_list_intro">
+					<img src="./images/ex_img3.png" alt="">
+					<p>
+						<span>000 전문가</span>
+						여러분 반갑습니다. 부동산 네트워크를 통해 다양하고 정확한 정보전달을 위해 항상 노력을 더 하고 있는 정록부동산 중개법인 김규린 차장입니다. <br>
+						저는 앞으로 여러분들께 인천 강화부터 송도 영종도를 비롯하여 부평구, 서구 등 인천 전지역에 쏟아져 나오는 호재란 호재를 다 모아 퀄리티 있는 투자를 위해 최선을 다할 것을 약속할 수 있습니다.
+					</p>
+				</div>
+			</div>
+			<div class="exp_detail_cont_list">
+				<h4 class="sgreen">부동산 현장체험 소개</h4>
+				<div class="exp_detail_cont_list_banner">
+					<img src="./images/001.png" alt="">
+					<img src="./images/002.png" alt="">
+					<img src="./images/003.png" alt="">
+					<img src="./images/004.png" alt="">
+					<img src="./images/005.png" alt="">
+				</div>
+				<div class="video-content" data-video="true">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/PGDwyUDY0CQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="exp_detail_cont_list">
+				<button class="btn01 mb40px" onclick="location.href='https://booking.naver.com/booking/12/bizes/668996/items/4399969'">지금 바로 신청하기 >></button>
+				<button class="btn02" onclick="location.href='experience.htm'">목록으로 가기</button>
+			</div>
+		
+	<div class="clear"></div>
+
+	<div class="box-shortcut">
+		<ul class="menu">
+		  <li><a href="https://booking.naver.com/booking/12/bizes/668996/items/4399969" title="신청 바로가기">
+			<div class="order_banner">
+				<h5>부동산 현장체험_재개발</h5>
+				<p>
+					<span>S&K 리얼티 중개법인</span>
+					<span>서울특별시 강남구 테헤란로 4길 38 태영빌딩 402호</span>
+					<span>2022.05.09 - 2022.12.31</span>
+					<span>모집인원 10명</span>
+				</p>
+				<hr>
+				<p>투어링 가격 <em>50,000원</em></p>
+				<button>신청하러 가기</button>
+			</div>
+		  </a></li>
+		</ul>
+		<!--<button class="btn-scroll-top" title="스크롤 이동">Top</button>-->
+	</div>
+	<!--# 콘텐츠 끝 : CONTAINER #-->
+
+	<!--# 풋터 시작 : FOOTER #-->
+	<div class="footer">
+		<div class="copyright">
+			<P style="line-height:80px; margin-bottom:0px;">집통에 대한 모든 궁금증<br class="only_mobile"> 바로 문의하세요
+				<br>
+				<em>02 -2128-3838</em>
+				
+				<span style="font-size:20px; display: block;">업무시간 : 평일 오전9시  ~ 평일 오후 6시</span>
+			</P>
+			
+		</div>
+	</div>
+	<!--# 풋터 끝 : FOOTER #-->
+</div>
+
+
+
+
+<!-- Swiper JS -->
+<script type="text/javascript" src="./js/swiper.js"></script>
+<script type="text/javascript">
+var swiper1 = new Swiper('.swiper-container1', {
+	pagination: '.swiper-pagination',
+	paginationClickable: true,
+	nextButton: '.swiper-button-next',
+	prevButton: '.swiper-button-prev'
+	/*loop:'auto'*/
+});
+var swiper2 = new Swiper('.swiper-container2', {
+	pagination: '.swiper-pagination',
+	paginationClickable: true,
+	nextButton: '.swiper-button-next',
+	prevButton: '.swiper-button-prev'
+	/*loop:'auto'*/
+});
+</script>
+<!--### 전체 레이아웃 끝 : WRAP ###-->
+
+<!--sortable-->
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script>
+$("#sortable, #sortable2").sortable({
+  cursor: "move",
+  //이동시 커서 왼쪽에서 5px 위치에 항상 요소가 위치함
+  cursorAt: { left: 5 },
+  //sort-list2로 요소 이동가능.. 
+  //sort-list2에서 sort-list1로는 이동불가 - 따로 또 써주어야함.
+  connectWith: ".connectedSortable",
+  update: function(event, ui) {    
+      //순서가 바뀌면 
+    var listArray = $("#sortable").sortable('toArray', {attribute: 'value'}).toString();
+    //배열로 저장한다. 
+  },
+	
+  
+});
+
+</script>
+
+<!--tooltip-->
+<script>
+$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+</script>
+
+
+<script>
+$j = jQuery;
+
+/*
+  --- Copy from here
+*/
+
+if ($j('.custom_page_123').length>0){
+  $j('<div class="qna"></div>').appendTo("#col2");
+  $j('.box.text:not(:first-of-type)').each(function(){
+    $j(this).appendTo('.qna');
+    $j(this).children('.box_content').slideUp();
+  });
+  
+  $j('.qna .box.text').click(function(){
+    if ($j(this).hasClass('qna_show')){
+      $j('.qna_show').children('.box_content').slideUp();
+      $j('.qna_show').removeClass('qna_show');
+    } else {
+      $j('.qna_show').children('.box_content').slideUp();
+      $j('.qna_show').removeClass('qna_show');
+      $j(this).addClass('qna_show');
+      $j(this).children('.box_content').slideDown();
+    }
+  });
+}
+</script>
+
+<script>
+	(function($){
+  
+  $.fn.quickMenu = function(){
+    return this.each(function(){
+      var idx = 0;
+      var h = [];
+      var $wrap = $(this);
+      var $menu = $wrap.find(".menu");
+      var $btn = $menu.children("li").children("a");
+      var $btnScrollTop = $wrap.find(".btn-scroll-top");
+      var $section = $(".section");
+      var wrapH = $wrap.outerHeight();
+      var wrapT = $wrap.position().top;
+      var nowScroll = 0;
+      var scrolling = true;
+
+      function btnActive(num){
+        $btn.not($btn.eq(num)).removeClass("on");
+        $btn.eq(num).addClass("on");
+      }
+
+      function moveScroll(num){
+        if(scrolling){
+          scrolling = false;
+          $("html, body").animate({scrollTop : num}, function(){scrolling = true});
+        }
+      }
+          
+      btnActive(idx);
+
+      $wrap.css({"margin-top": -(wrapH / 2)});
+      
+      $btnScrollTop.on("click", function(e){
+        e.preventDefault();
+        
+        moveScroll(0);
+      });
+      
+      $(window).scroll(function(){
+        
+        nowScroll = $(this).scrollTop();
+        
+        $section.each(function(idx){
+          h[idx] = $(this).offset().top
+          
+          if(nowScroll >= h[idx]){
+            btnActive(idx);
+          }
+        });
+      });
+          
+    });
+  }
+  
+})(jQuery);
+
+$(function(){
+  $(".box-shortcut").quickMenu();
+});
+</script>
+</body>
+</html>

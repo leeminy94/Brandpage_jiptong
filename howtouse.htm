@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="집통">
+<meta name="copyright" content="(주)알토">
+<meta name="title" content="집통 - 내집팔땐? 집통!">
+<meta name="keywords" content="집통">
+<meta name="description" content="내집팔땐, 집통!">
+<meta name="Robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://m.jiptong.com/images/jiptong_icon.png">
+<meta property="og:site_name" content="집통">
+<meta property="og:url" content="https://m.jiptong.com/">
+<meta property="og:title" content="집통 - 내집팔땐">
+<meta property="og:description" content="내집팔땐, 집통!">
+<title>::: 집통 ::: 내집팔땐?</title>
+
+<!--fontawesome-->
+<script src="https://kit.fontawesome.com/fc9abeac58.js" crossorigin="anonymous"></script>
+<!--font-->
+<link href="https://webfontworld.github.io/goodchoice/Jalnan.css" rel="stylesheet">
+
+<!-- Fav Icon -->
+<link rel="icon" type="image/jpg" href="./images/jiptong_icon.png" sizes="48x48">
+<link rel="shortcut icon" href="./images/jiptong_icon.png">
+
+<!-- Main Style -->
+<link rel="stylesheet" type="text/css" href="./css/style_noto.css" />
+<link rel="stylesheet" type="text/css" href="./css/jiptong_mw.css">
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="./css/side_menu.css" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="./css/bottom_tab_bar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+
+<!--fontawesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="./js/html5shiv.js"></script>
+<script type="text/javascript" src="./js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="./js/html5shiv.js"></script>
+<script type="text/javascript" src="./js/respond.min.js"></script>
+
+<!-- Basic JavaScript -->
+<script type="text/javascript" src="./js/script.js"></script>
+<script type="text/javascript" src="./js/side_menu.js"></script>
+<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="./js/bottom_tab_bar.js"></script>
+
+<!-- Tab JavaScript -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        //Default Action - TAB01
+        $(".tab_content").hide(); //Hide all content
+        $("ul.tabs li:first").addClass("active").show(); //Activate first tab
+        $(".tab_content:first").show(); //Show first tab content
+        //On Click Event
+        $("ul.tabs li").click(function () {
+            $("ul.tabs li").removeClass("active"); //Remove any "active" class
+            $(this).addClass("active"); //Add "active" class to selected tab
+            $(".tab_content").hide(); //Hide all tab content
+            var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+            $(activeTab).fadeIn(); //Fade in the active content
+            return false;
+        });
+    });
+</script>
+
+<!-- Bootstrap Core JavaScript -->
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script type="text/javascript" src="./js/scrolling-nav.js"></script>
+<script type="text/javascript" src="./js/jquery.easing.1.3.min.js"></script>
+
+<!-- FlexSlider -->
+<script defer src="./js/jquery.flexslider.js"></script>
+
+<!-- 웹폰트 : 비동기 로더 -->
+<script type="text/javascript">
+WebFontConfig = {
+	custom: {
+		families: ['Nanum Gothic'],
+		/*urls: ['./css/notosanskr.css'] 본고딕*/
+		urls: ['https://fonts.googleapis.com/earlyaccess/nanumgothic.css']
+	}
+};
+(function() {
+	var wf = document.createElement('script');
+	wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+		'://ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js';
+	wf.type = 'text/javascript';
+	wf.async = 'true';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(wf, s);
+})(); 
+</script>
+</head>
+    <!--### 전체 레이아웃 시작 : WRAP ###-->
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <div class="wrap">
+            <form method="post" action="./concert.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="TKrZNZm4PMcARIcgABTj+VIg2azIXs6Q3HK6EkOW0ZN/583yfrXV0S6C4Z4vv8fBfisGJCJvoajzoAYvsiyDj20om/nxMpfGd6Y7msgP7YvN4QzgYWiZ4OiIf6reRYyq0zQ54XSJPmuBBCnfaJwWebNDsO6tGjGBnhtzfyMPSmgEvqB8D/n3aNDdcyTk8WLg" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="66CCC1C2" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="BK3p5pSoZ72kkJWwf7w3Do4kAB3fVjMFP2MYlNrABSrNsJXm5lxQcbsggNojX3xczSvN0cnEQU3kc8ZyLBgrPvgHDQ876Bs3GbdFGXD0kXeL9st1Z2vjjllrGKTdyof32HTdVtSzRThY4d0VEGO8kVlpD9VDlhgtRTRf1/PuxifP3L2pP3bJaVbZdKe3Y8Ah1iHr0xWwhXR6QWWYsCY1ScyGR05iKj2Ej7uhCBd2jJVg8ORuWxaQ78w1a8/2yO06oGeDY0EP7ofBljJqeGAZQw==" />
+</div>
+                <div>
+                    <!--## 헤더 ##-->
+                    
+
+
+<div class="wrap">
+	<!--## 네비 : NAV ##-->
+	<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- PC 네비 -->
+			<div class="navbar-header page-scroll only_pc"></div>
+			<!-- PC 네비 -->
+			
+			<!-- 모바일 네비 side bar -->
+			<div class="navbar-header2 sidenav4 only_mobile" id="mySidenav4" style="padding:0 20px;">
+				<a href="index.aspx"><span>내집팔땐? 집통</span></a>
+				<a href="javascript:void(0)" id="open_btn2" class="openbtn2" onclick="openNav2()"><i class="fas fa-bars white"></i></a>
+				<a href="javascript:void(0)" id="close_btn2" class="closebtn2" onclick="closeNav2()" style="display: none; z-index:10000;"><i class="fas fa-times"></i></a>
+			</div>
+
+			<div id="sortable-list2" class="sidenav3" style="display:none;" >
+                <span class="m_menu"><a href="./howtouse.htm">사용방법</a></span>
+                <span class="m_menu"><a href="./sale.aspx">매물 촬영 대행</a></span>
+				<span class="m_menu"><a href="./concert.aspx">부동산 콘서트</a></span>
+				<span class="m_menu"><a href="./experience.aspx">부동산 현장체험</a></span>
+				<span class="m_menu"><a href="./qna.aspx">문의하기</a></span>
+			</div>
+
+			<!-- pc 네비 -->
+			<div class="collapse navbar-collapse only_pc">
+				<a class="navbar-brand logo" href="./index.aspx">
+					<h1>내집팔땐? 집통!</h1>
+				</a>
+				<ul class="nav navbar-nav">
+                    <li><a href="./howtouse.htm">사용방법</a></li>
+                    <li><a href="./sale.aspx">매물 촬영 대행</a></li>
+					<li><a href="./concert.aspx">부동산 콘서트</a></li>
+					<li><a href="./experience.aspx">부동산 현장체험</a></li>
+					<li><a href="./qna.aspx">문의하기</a></li>
+				</ul>
+			</div>
+		
+			<div class="nav_bg"></div>
+		</div>
+
+        <!-- 우측 사이드 메뉴 -->
+
+
+		
+    </nav>
+</div>
+
+                    <!--## 본문 ##-->
+                    
+
+	<style>
+		.footer{
+            display:none;
+        }
+		.sidenav
+		{
+            display:none;
+        }
+		/* index.html - popup */
+		.divpop {
+			position: fixed;
+			z-index: 999;
+			top: 100px;
+			left: 50px;
+			width: 352px;
+			height: 500px;
+			border: 1px solid black;
+			background-color: #fff;
+		}
+
+		.title_area {
+			font-weight: bold;
+			text-align: center;
+			width: 100%
+		}
+
+		.button_area {
+			position: absolute;
+			bottom: 13px;
+			left: 50%;
+		}
+
+			.button_area input[type=checkbox] {
+				margin-right: 10px;
+			}
+
+		/* Slideshow container */
+		.slideshow-container {
+			max-width: 1000px;
+			position: relative;
+			margin: 0 auto;
+		}
+		/* The dots/bullets/indicators */
+		.dot {
+			height: 10px;
+			width: 10px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+		}
+
+		.dots .dot.active {
+			background-color: #717171;
+		}
+
+		.mySlides img {
+			height: 420px;
+		}
+
+
+		.cscreen {
+			margin: 0 auto;
+			padding: 6vh 0 0;
+			text-align: center;
+			font-size: 60px;
+			font-weight: 500;
+			color: #fff;
+			line-height: 50px;
+			position: relative;
+			display: block;
+			z-index: 100;
+		}
+
+		
+
+
+		@media all and (max-width:480px) {
+			.cscreen {
+				padding:30px 0 0;
+			}
+
+			.cscreen_span .darkblue, .cscreen_span p {
+				font-size: 16px;
+				line-height: 26px;
+			}
+
+			.video-content {
+				margin: 30px auto 30px;
+			}
+		}
+
+		.dcontainer {
+			width: 100%;
+			max-width: 1280px;
+			margin: 0 auto;
+			padding: 0px 0 150px;
+			position: relative;
+		}
+
+		.dscreen {
+			margin: 0 auto;
+			padding: 3vh 0 0;
+			text-align: left;
+			font-size: 60px;
+			font-weight: 500;
+			color: #fff;
+			line-height: 50px;
+			position: relative;
+			display: block;
+			z-index: 100;
+		}
+
+		.dscreen_span .darkblue , .dscreen_span p {
+			color: #475577 !important;
+			font-size: 26px;
+		}
+
+		.d_title {
+			font-size: 40px !important;
+			text-align: left
+		}
+
+		.mgleft100 {
+			margin-left: 100px;
+		}
+
+
+		@media all and (max-width:480px) {
+			.dscreen {
+				padding: 1vh 0 0;
+			}
+			.dscreen_span .darkblue {
+				font-size: 18px;
+				line-height: 20px;
+			
+			}
+			.d_title {
+				font-size: 25px !important;
+				text-align: left
+			}
+			.mgleft100 {
+				margin-left: 35px !important;
+			}
+
+		}
+	</style>
+
+	
+	<script>
+
+		// 휴대폰 번호 정규식
+		function sendBtn() {
+			//var regex = /^[0-9]+$/;
+			//전화번호 형식
+			//var regex= /^\d{2,3}\d{3,4}\d{4}$/;
+            n = $('#ContentPlaceHolder1_applicantName').val();
+            a = $('#ContentPlaceHolder1_attendNumber').val();
+            p = $('#ContentPlaceHolder1_phoneNumber').val();
+            r = $('#ContentPlaceHolder1_route').val();
+
+
+            //console.log(v);
+
+            if (n == "") {
+				alert('대표자명을 입력하세요.');
+				return false;
+            }
+                        
+            if (a == "") {
+				alert('인원수를 입력하세요.');
+				return false;
+            }
+
+			if (p == "") {
+				alert('휴대폰 번호를 입력하세요.');
+				return false;
+            }
+
+            if (r == "") {
+                alert('참가신청 경로를 입력하세요.');
+                return false;
+            }
+
+			if (!$('#ContentPlaceHolder1_checkbox').is(':checked')) {
+				alert('동의하기를 눌러주세요.');
+				return false;
+			}
+		}
+	</script>
+
+
+	<!--## 콘텐츠 시작 : CONTAINER ##-->
+	<div class="tt_bg" >
+		<div class="hcontainer" style="padding:0px 0 50px;">
+			<div class="cscreen">
+				<span class="cscreen_span">
+                    <span class="white" style="font-size: 30px;">
+                        <p>손쉽게 하는 매물 등록!</p>
+                    </span>
+					<span class="syellow" style="font-size: 35px;">
+                        <p>집통 매물 등록 프로세스</p>
+                    </span>					
+				</span>
+			</div>
+		</div>
+	</div>
+
+    <div id="howtouse">
+        <img src="./images/process.jpg" alt="">
+        <div class="howtouse_cont">
+            <h4>지금 바로 설치하세요!</h4>
+            <div class="hc_btns">
+                <a href="https://play.google.com/store/apps/details?id=com.tomatosol.rtomato&hl=ko&gl=US"><img src="./images/ad_down.png" alt=""></a>
+                <a href="https://apps.apple.com/kr/app/%EC%A7%91%ED%86%B5/id932212601"><img src="./images/ios_down.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+
+	<div class="clear"></div>
+
+	<!--# 콘텐츠 끝 : CONTAINER #-->
+
+	<!--# 풋터 시작 : FOOTER #-->
+	<div class="footer modFooter" style="display: block; ">
+		<div class="copyright" style="padding: 40px 20px 60px;">
+			<p>집통 COMPANY</p>
+			<br>
+			㈜토마토집통<br>
+			주소 : 서울특별시 마포구 양화진 4길 32, 2층(합정동, 이토마토빌딩)<br>
+			대표자 : 전우리
+			<br>
+			통신판매번호 : 2013-서울마포-0945<br>
+			사업자번호 : 105-87-89091
+			<br>
+			전화 : 02-2128-3838
+			<br>
+			팩스 : 02-2128-3851
+			    <div class="fw_top">
+                    <a href="#page-top" class="page-scroll">
+					    <img src="./images/icon/top_btn.png" alt="위로">
+                    </a>
+			    </div>
+		</div>
+	</div>
+
+
+
+                     <!--## 푸터 ##-->
+                    
+
+<!--# 풋터 시작 : FOOTER #-->
+	<div class="footer">
+		<div class="copyright">
+			<P style="line-height:80px; margin-bottom:0px;">집통에 대한 모든 궁금증<br class="only_mobile"> 바로 문의하세요
+				<br>
+				<em>02 -2128-3838</em>
+				
+				<span style="font-size:20px; display: block;">업무시간 : 평일 오전9시  ~ 평일 오후 6시</span>
+			</P>
+			
+		</div>
+	</div>
+<!--# 풋터 끝 : FOOTER #-->
+
+
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
